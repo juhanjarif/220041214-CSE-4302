@@ -5,7 +5,6 @@ class RationalNumber{
 private:
     int numerator = 0;
     int denominator = 1;
-
 public:
     void assign(int input_numerator, int input_denominator){
         if (input_denominator == 0) {
