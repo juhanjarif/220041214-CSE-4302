@@ -10,7 +10,6 @@ private:
 
     int input_nos = 1;
     double discountPercent = 5;
-
 public:
     void assignName(char name[], char genericName[]){
         strcpy(TradeName, name);
