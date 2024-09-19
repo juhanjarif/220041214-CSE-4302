@@ -3,9 +3,11 @@ using namespace std;
 
 class RationalNumber{
 private:
-    int numerator = 0;
-    int denominator = 1;
+    int numerator;
+    int denominator;
+
 public:
+    RationalNumber() : numerator(0), denominator(1){}; // default constructor added later on;
     void assign(int input_numerator, int input_denominator){
         if (input_denominator == 0) {
             cout << "You can not assign 0 as denominator." << endl;
