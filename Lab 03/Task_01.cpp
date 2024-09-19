@@ -3,10 +3,11 @@ using namespace std;
 
 class Counter{
 private:
-    int count = 0;
+    int count;
     int incrementStep;
 
 public:
+    Counter() : count(0){}; // default constructor added later on;
     void setIncrementStep(int newIncrementStep){
         incrementStep = newIncrementStep;
     }
