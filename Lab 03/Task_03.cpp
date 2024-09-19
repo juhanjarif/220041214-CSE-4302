@@ -6,11 +6,13 @@ class Medicine{
 private:
     char TradeName[30];
     char GenericName[30];
-    double unitPrice = 0;
+    double unitPrice;
 
-    int input_nos = 1;
-    double discountPercent = 5;
+    int input_nos;
+    double discountPercent;
+
 public:
+    Medicine() : unitPrice(0), input_nos(1), discountPercent(5){}; // default constructor added later on;
     void assignName(char name[], char genericName[]){
         strcpy(TradeName, name);
         strcpy(GenericName, genericName);
